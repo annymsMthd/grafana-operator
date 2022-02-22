@@ -62,6 +62,8 @@ spec:
                             https://github.com/Vertamedia/clickhouse-grafana/tree/master/dist/README.md#configure-the-datasource-with-provisioning
                             See https://github.com/Vertamedia/clickhouse-grafana/tree/master/src/datasource.ts#L44
                           type: boolean
+                        alertmanagerUid:
+                          type: string
                         allowInfraExplore:
                           type: boolean
                         apiToken:
@@ -176,6 +178,9 @@ spec:
                           type: string
                         logMessageField:
                           type: string
+                        manageAlerts:
+                          description: Fields for monitoring
+                          type: boolean
                         maxIdleConns:
                           type: integer
                         maxLines:

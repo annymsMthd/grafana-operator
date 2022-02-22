@@ -183,6 +183,9 @@ type GrafanaDataSourceJsonData struct {
 	UseProxy          bool   `json:"useProxy,omitempty"`
 	ShowOffline       bool   `json:"showOffline,omitempty"`
 	AllowInfraExplore bool   `json:"allowInfraExplore,omitempty"`
+	// Fields for monitoring
+	ManageAlerts    bool   `json:"manageAlerts,omitempty"`
+	AlertManagerUID string `json:"alertmanagerUid,omitempty"`
 }
 
 type GrafanaDataSourceJsonDerivedFields struct {
